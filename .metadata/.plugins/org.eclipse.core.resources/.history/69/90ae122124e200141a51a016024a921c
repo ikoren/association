@@ -1,0 +1,33 @@
+package foi.hr.air.asocijacije.db;
+
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+
+@Table(name = "Igra_korisnik")
+public class Game_user extends Model {
+
+	@Column(name = "id_zapisa")
+	public long id_zapisa;
+	@Column(name = "id_korisnika")
+	public long id_korisnika;
+	@Column(name = "korisnik")
+	public User korisnik;
+	@Column(name = "id_igre")
+	public long id_igre;
+	@Column(name = "igra")
+	public Game igra;
+
+	public Game_user() {
+		super();
+	}
+
+	public Game_user(long id_zapisa, long id_korisnika, User korisnik,
+			long id_igre) {
+		super();
+		this.id_zapisa = id_zapisa;
+		this.id_korisnika = id_korisnika;
+		this.korisnik = korisnik;
+		this.id_igre = id_igre;
+	}
+}

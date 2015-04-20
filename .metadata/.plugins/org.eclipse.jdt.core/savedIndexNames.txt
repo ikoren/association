@@ -1,0 +1,6 @@
+INDEX VERSION 1.127+E:\Ivana(D)\FAKS\DS\1GODINA\1SEMESTAR\AIR\association\.metadata\.plugins\org.eclipse.jdt.core
+1757590216.index
+2624531643.index
+3492762442.index
+2162459931.index
+1257112884.index
