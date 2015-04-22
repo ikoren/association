@@ -32,20 +32,21 @@ public final class R {
         public static final int repeat_bg=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000d;
-        public static final int btnLogin=0x7f090004;
-        public static final int btnRegister=0x7f09000b;
+        public static final int action_settings=0x7f09000e;
+        public static final int btnLogin=0x7f090005;
+        public static final int btnRegister=0x7f09000c;
+        public static final int checkBox1=0x7f090004;
         public static final int footer=0x7f090003;
         public static final int header=0x7f090002;
         public static final int lin_lay=0x7f090000;
-        public static final int link_to_login=0x7f09000c;
-        public static final int link_to_register=0x7f090005;
+        public static final int link_to_login=0x7f09000d;
+        public static final int link_to_register=0x7f090006;
         public static final int logo=0x7f090001;
-        public static final int reg_email=0x7f090008;
-        public static final int reg_ime=0x7f090006;
-        public static final int reg_password=0x7f090009;
-        public static final int reg_password_check=0x7f09000a;
-        public static final int reg_prezime=0x7f090007;
+        public static final int reg_email=0x7f090009;
+        public static final int reg_ime=0x7f090007;
+        public static final int reg_password=0x7f09000a;
+        public static final int reg_password_check=0x7f09000b;
+        public static final int reg_prezime=0x7f090008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -69,6 +70,7 @@ public final class R {
         public static final int postojeci_korisnik=0x7f06000b;
         public static final int prezime_korisnika=0x7f060009;
         public static final int registracija_novi=0x7f06000a;
+        public static final int remember_me=0x7f06000d;
         public static final int user_email=0x7f060007;
         public static final int user_password=0x7f060005;
         public static final int user_password_check=0x7f060006;

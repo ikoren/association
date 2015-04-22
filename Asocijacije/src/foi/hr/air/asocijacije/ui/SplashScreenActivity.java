@@ -20,7 +20,7 @@ import foi.hr.air.asocijacije.R;
  * Created by Josip on 11.3.2015..
  * Klasa za prikaz zaslona dobrodošlice
  */
-public class SplashScreenActivity  extends Activity {
+public class SplashScreenActivity extends Activity {
 
     int time = 4000;
 

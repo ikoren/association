@@ -6,7 +6,7 @@ $response = array();
 
 require_once("db_connect.php");
 $db = new db_connect();
-$upit="SELECT * FROM korisnik";
+$upit="SELECT * FROM user";
 $result = $db->selectDB($upit);
 // check for empty result
 if ($result->num_rows > 0) {

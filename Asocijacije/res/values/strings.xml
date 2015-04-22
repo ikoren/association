@@ -14,5 +14,6 @@
     <string name="registracija_novi">Registriraj novi korisnički račun</string>
     <string name="postojeci_korisnik">Već si registriran? Logiraj se ovdje!</string>
     <string name="opis_slike_asocijacije">Logo aplikacije</string>
+    <string name="remember_me">Zapamti me</string>
 
 </resources>

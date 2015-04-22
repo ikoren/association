@@ -12,7 +12,7 @@ class db_connect {
      function spojiDB() {
         $mysqli = new mysqli(self::server, self::korisnik, self::lozinka, self::baza);
         if ($mysqli->connect_errno) {
-            echo "Neuspješno spajanje na bazu: " . $mysqli->connect_errno . ", " . $mysqli->connect_error;
+            echo "Neuspjesno spajanje na bazu: " . $mysqli->connect_errno . ", " . $mysqli->connect_error;
         }
         return $mysqli;
     }
