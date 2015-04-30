@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -23,6 +24,7 @@ import foi.hr.air.asocijacije.R;
 public class SplashScreenActivity extends Activity {
 
     int time = 4000;
+    Timer timer = new Timer();
 
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -36,7 +38,6 @@ public class SplashScreenActivity extends Activity {
         setContentView(R.layout.activity_splash);
         StartAnimations();
 
-        Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -68,5 +69,15 @@ public class SplashScreenActivity extends Activity {
         ImageView imageview = (ImageView) findViewById(R.id.logo);
         imageview.clearAnimation();
         imageview.startAnimation(anim);
+    }
+    
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+    	// TODO Auto-generated method stub
+    	timer.cancel();
+    	Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+    	startActivity(intent);
+    	finish();
+    	return super.onTouchEvent(event);
     }
 }

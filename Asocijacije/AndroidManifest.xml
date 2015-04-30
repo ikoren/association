@@ -5,10 +5,13 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="16" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name="foi.hr.air.asocijacije.main.AppController"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -24,7 +27,10 @@
             </intent-filter>
         </activity>
         
-        <activity android:name="foi.hr.air.asocijacije.main.MainActivity"></activity>
+        <activity 
+            android:name="foi.hr.air.asocijacije.main.MainActivity">
+        </activity>
+        
         <activity
             android:name="foi.hr.air.asocijacije.ui.LoginActivity"
             android:label="Logirajte se u svoj korisnički račun"
@@ -38,6 +44,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="stateHidden">
         </activity>
+        
     </application>
 
 </manifest>
